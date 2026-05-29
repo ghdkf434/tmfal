@@ -38,7 +38,7 @@ header{
   justify-content:space-between;
   align-items:center;
   flex-wrap:wrap;
-  gap:30px;
+  gap:40px;
   box-shadow:0 10px 30px rgba(255,220,120,0.25);
 }
 
@@ -69,8 +69,11 @@ header{
   box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
 
+/* 메인 이미지 */
+
 .hero-image{
   position:relative;
+  display:inline-block;
 }
 
 .main-dog{
@@ -78,29 +81,29 @@ header{
   border-radius:35px;
   border:10px solid white;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  display:block;
 }
+
+/* 프로필 */
 
 .profile-box{
   position:absolute;
   right:20px;
   bottom:20px;
+
   background:white;
-  padding:12px;
+  padding:10px;
+
   border-radius:20px;
   text-align:center;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-  background:white;
-  padding:12px;
-  border-radius:20px;
-  text-align:center;
+
   box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .profile-box img{
-  width:140px;
-  height:140px;
-  border-radius:18px;
+  width:110px;
+  height:110px;
+  border-radius:16px;
   object-fit:cover;
 }
 
@@ -113,6 +116,7 @@ header{
 .profile-box p{
   font-size:12px;
   color:#777;
+  line-height:1.5;
 }
 
 /* 메뉴 */
@@ -255,7 +259,7 @@ section{
   display:flex;
   justify-content:space-around;
   align-items:flex-end;
-  height:180px;
+  height:220px;
   margin-bottom:20px;
 }
 
@@ -268,7 +272,7 @@ section{
 }
 
 .mini-bar{
-  width:55px;
+  width:60px;
   background:linear-gradient(to top,#ffc85c,#ffe48f);
   border-radius:20px 20px 0 0;
 }
@@ -431,8 +435,6 @@ footer{
 
 </div>
 
-<!-- 말티즈 소개 -->
-
 <section id="intro">
 
   <h2 class="section-title">🐾 말티즈 소개</h2>
@@ -467,8 +469,6 @@ footer{
 
 </section>
 
-<!-- 부산 이슈 -->
-
 <section id="busan">
 
   <h2 class="section-title">🌊 부산의 이슈</h2>
@@ -492,8 +492,6 @@ footer{
   </div>
 
 </section>
-
-<!-- 부경대 뉴스 -->
 
 <section id="news">
 
@@ -519,8 +517,6 @@ footer{
 
 </section>
 
-<!-- 사회복지 통계 -->
-
 <section id="welfare">
 
   <h2 class="section-title">📊 사회복지 관련 통계</h2>
@@ -544,8 +540,6 @@ footer{
   </div>
 
 </section>
-
-<!-- 동물등록 통계 -->
 
 <section id="animal">
 
@@ -575,33 +569,34 @@ footer{
 
       <h3>📊 반려견 양육 증가율</h3>
 
-     <div class="graph-box">
+      <div class="graph-box">
 
-  <div class="graph-item">
+        <div class="graph-item">
 
-    <div class="mini-bar" style="height:90px;"></div>
+          <div class="mini-bar" style="height:90px;"></div>
 
-    <span>2021</span>
+          <span>2021</span>
 
-  </div>
+        </div>
 
-  <div class="graph-item">
+        <div class="graph-item">
 
-    <div class="mini-bar" style="height:130px;"></div>
+          <div class="mini-bar" style="height:130px;"></div>
 
-    <span>2022</span>
+          <span>2022</span>
 
-  </div>
+        </div>
 
-  <div class="graph-item">
+        <div class="graph-item">
 
-    <div class="mini-bar" style="height:170px;"></div>
+          <div class="mini-bar" style="height:170px;"></div>
 
-    <span>2023</span>
+          <span>2023</span>
 
-  </div>
+        </div>
 
-</div>
+      </div>
+
       <p>
         말티즈와 같은 소형견 양육 비율도 높아지고 있습니다.
       </p>
@@ -634,8 +629,6 @@ footer{
 
 </section>
 
-<!-- 그래프 이미지 -->
-
 <section id="graph">
 
   <h2 class="section-title">
@@ -649,8 +642,6 @@ footer{
   </div>
 
 </section>
-
-<!-- 갤러리 -->
 
 <section id="gallery">
 
