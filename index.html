@@ -21,16 +21,17 @@
 
     header {
       width: 100%;
-      padding: 22px 8%;
+      padding: 18px 6%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: rgba(255,255,255,0.7);
-      backdrop-filter: blur(8px);
+      background-color: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid #f0d9cf;
-      position: sticky;
+      position: fixed;
       top: 0;
-      z-index: 10;
+      left: 0;
+      z-index: 100;
     }
 
     .logo {
@@ -38,6 +39,10 @@
       font-weight: bold;
       color: #d48c8c;
       letter-spacing: 2px;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     nav a {
@@ -53,13 +58,13 @@
     }
 
     .main {
-      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 50px;
-      padding: 70px 8%;
+      padding: 140px 8% 60px;
       flex-wrap: wrap;
+      min-height: 100vh;
     }
 
     .text-box {
@@ -130,7 +135,11 @@
     }
 
     section {
-      padding: 60px 8%;
+      padding: 120px 8% 80px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .section-title {
@@ -187,14 +196,16 @@
   <header>
     <div class="logo">Maltese</div>
     <nav>
+      <a href="#home">메인</a>
       <a href="#about">소개</a>
-      <a href="#feature">특징</a>
-      <a href="#news">뉴스</a>
+      <a href="#feature">부산 이슈</a>
+      <a href="#news">부경대 뉴스</a>
       <a href="#stats">통계</a>
+      <a href="#gallery">갤러리</a>
     </nav>
   </header>
 
-  <main class="main">
+  <main class="main" id="home">
     <div class="text-box">
       <h1>말티즈</h1>
       <p>
@@ -207,34 +218,35 @@
 
       <p><strong>부산 날씨 :</strong> 맑음 ☀️ / 23°C</p>
 
-      <a href="https://github.com/ghdkf434/tmfal.git" class="btn" target="_blank">Github 바로가기</a>
+      
     </div>
 
     <div class="image-box">
-      <img src="dog1.png" alt="메인 말티즈 이미지">
-
-      </div>
+      <img src="./dog1.png" alt="메인 말티즈 이미지">
+    </div>
   </main>
 
   <section id="about">
-    <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; margin-bottom: 40px;">
-      <div style="flex: 1; min-width: 280px;">
-        <img src="./dog2.png" alt="소개 말티즈 이미지" style="width: 100%; max-width: 350px; border-radius: 25px; border: 8px solid white; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+    <div style="display:flex; align-items:center; justify-content:center; gap:50px; flex-wrap:wrap; margin-bottom:50px;">
+
+      <div style="flex:1; min-width:280px; text-align:center;">
+        <img src="./dog2.png" alt="소개 말티즈 이미지"
+        style="width:100%; max-width:350px; border-radius:30px; border:8px solid white; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
       </div>
 
-      <div style="flex: 1; min-width: 280px;">
-        
-        <p style="color:#666; margin-bottom:15px;">
-          말티즈는 작은 체형과 귀여운 외모로 많은 사랑을 받는 반려견입니다.
-          사람을 좋아하고 애교가 많아 가족과 함께 지내기 좋습니다.
+      <div style="flex:1; min-width:280px;">
+        <h2 class="section-title">말티즈 소개</h2>
+        <p style="margin-bottom:15px; color:#666;">
+          말티즈는 귀엽고 활발한 성격으로 많은 사랑을 받는 반려견입니다.
+          사람과 함께 있는 시간을 좋아하며 애교가 많습니다.
         </p>
 
         <p style="color:#666;">
-          하얀 털과 동그란 눈이 특징이며 실내 생활에 잘 어울립니다.
+          하얀 털과 작은 체형이 특징이며 실내 생활에도 잘 어울립니다.
         </p>
       </div>
+
     </div>
-    <h2 class="section-title">말티즈 소개</h2>
 
     <div class="card-container">
       <div class="card">
@@ -330,16 +342,17 @@
     </div>
   </section>
 
-  <section style="padding: 40px 8%; text-align: center;">
+  <section id="gallery" style="padding: 120px 8%; text-align: center; min-height:100vh; display:flex; flex-direction:column; justify-content:center;">
     <h2 class="section-title">귀여운 말티즈 갤러리 🐶</h2>
-    <p style="margin-top: 10px; color: #777;">
-      사랑스러운 말티즈 사진을 감상해보세요!
-    </p>
 
-    <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap; margin-top:35px;">
-      <img src="./dog3.png" alt="말티즈 갤러리 사진" style="width:300px; border-radius:25px; border:8px solid white; box-shadow:0 6px 18px rgba(0,0,0,0.1);">
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:35px;">
 
-      <img src="./dog4.png" alt="말티즈 갤러리 사진" style="width:300px; border-radius:25px; border:8px solid white; box-shadow:0 6px 18px rgba(0,0,0,0.1);">
+      <img src="./dog3.png" alt="말티즈 사진"
+      style="width:300px; border-radius:30px; border:8px solid white; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
+
+      <img src="./dog4.png" alt="말티즈 사진"
+      style="width:300px; border-radius:30px; border:8px solid white; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
+
     </div>
   </section>
 
