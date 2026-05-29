@@ -3,364 +3,346 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>말티즈</title>
+  <title>이슬미 | Portfolio</title>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Pretendard', sans-serif;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Pretendard', sans-serif;
     }
 
-    body {
-      background: linear-gradient(to bottom, #f8ebe4, #fff7f2);
-      overflow-x: hidden;
-      color: #4b4b4b;
-      line-height: 1.6;
+    html{
+      scroll-behavior:smooth;
     }
 
-    header {
-      width: 100%;
-      padding: 18px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgba(255,255,255,0.75);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #f0d9cf;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
+    body{
+      background:#f4f4f7;
+      color:#444;
+      overflow-x:hidden;
     }
 
-    .logo {
-      font-size: 34px;
-      font-weight: bold;
-      color: #d48c8c;
-      letter-spacing: 2px;
+    header{
+      width:100%;
+      padding:35px 5%;
     }
 
-    html {
-      scroll-behavior: smooth;
+    .top-banner{
+      width:100%;
+      min-height:260px;
+      background:linear-gradient(90deg,#2f446f,#cfd2d9);
+      border-radius:20px;
+      overflow:hidden;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
     }
 
-    nav a {
-      text-decoration: none;
-      color: #555;
-      margin-left: 25px;
-      font-size: 15px;
-      transition: 0.3s;
+    .banner-text{
+      padding:50px;
+      color:white;
+      flex:1;
     }
 
-    nav a:hover {
-      color: #b18b76;
+    .banner-text h1{
+      font-size:52px;
+      margin-bottom:15px;
+      font-weight:800;
+      letter-spacing:1px;
     }
 
-    .main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-      padding: 140px 8% 60px;
-      flex-wrap: wrap;
-      min-height: 100vh;
+    .banner-text p{
+      font-size:20px;
+      opacity:0.95;
     }
 
-    .text-box {
-      flex: 1;
-      min-width: 300px;
+    .weather-box{
+      margin-top:22px;
+      display:inline-block;
+      background:rgba(255,255,255,0.18);
+      border:1px solid rgba(255,255,255,0.25);
+      padding:12px 20px;
+      border-radius:14px;
+      font-size:18px;
+      color:white;
+      backdrop-filter:blur(10px);
     }
 
-    .text-box h1 {
-      font-size: 70px;
-      font-weight: 800;
-      color: #d18b8b;
-      margin-bottom: 18px;
-      line-height: 1.1;
+    .banner-image img{
+      width:230px;
+      height:auto;
+      object-fit:cover;
     }
 
-    .text-box p {
-      margin-bottom: 18px;
-      color: #666;
+    .menu{
+      width:100%;
+      padding:0 5%;
+      margin-top:25px;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 13px 30px;
-      background-color: #ffb3b3;
-      color: white;
-      text-decoration: none;
-      border-radius: 40px;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(255,179,179,0.4);
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: 0.3s;
+    .menu-box{
+      background:white;
+      border-radius:18px;
+      padding:18px 25px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
     }
 
-    .btn:hover {
-      background-color: #ff9292;
+    .menu-left{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
     }
 
-    .image-box {
-      flex: 1;
-      min-width: 320px;
-      text-align: center;
+    .menu-btn{
+      padding:12px 22px;
+      border-radius:12px;
+      background:#f2f3f8;
+      color:#555;
+      text-decoration:none;
+      transition:0.3s;
+      font-size:15px;
     }
 
-    .image-box img {
-      width: 100%;
-      max-width: 470px;
-      border-radius: 30px;
-      border: 8px solid white;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    .menu-btn:hover{
+      background:#2f5ea8;
+      color:white;
     }
 
-    .small-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 20px;
-      flex-wrap: wrap;
+    .clock{
+      font-size:28px;
+      font-weight:700;
+      color:#233a63;
     }
 
-    .small-gallery img {
-      width: 90px;
-      height: 90px;
-      object-fit: cover;
-      border-radius: 12px;
+    section{
+      width:100%;
+      padding:35px 5%;
     }
 
-    section {
-      padding: 120px 8% 80px;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .section-title{
+      font-size:34px;
+      color:#233a63;
+      margin-bottom:30px;
+      font-weight:800;
     }
 
-    .section-title {
-      font-size: 32px;
-      margin-bottom: 25px;
-      color: #6d574d;
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
     }
 
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+    .card{
+      background:white;
+      border-radius:24px;
+      padding:25px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:0.3s;
     }
 
-    .card {
-      background-color: rgba(255,255,255,0.92);
-      padding: 28px;
-      border-radius: 25px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      transition: 0.3s;
+    .card:hover{
+      transform:translateY(-8px);
     }
 
-    .card:hover {
-      transform: translateY(-6px);
+    .card img{
+      width:100%;
+      border-radius:18px;
+      margin-bottom:18px;
     }
 
-    .card h3 {
-      margin-bottom: 12px;
-      color: #7b675d;
+    .card h3{
+      color:#2f5ea8;
+      margin-bottom:15px;
+      font-size:24px;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      background-color: #e8dfd8;
-      color: #666;
-      margin-top: 40px;
+    .card p{
+      line-height:1.8;
+      color:#666;
     }
 
-    @media screen and (max-width: 768px) {
-      .text-box h1 {
-        font-size: 42px;
-      }
-
-      nav a {
-        margin-left: 12px;
-        font-size: 13px;
-      }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:22px;
     }
+
+    .gallery img{
+      width:100%;
+      border-radius:22px;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    footer{
+      margin-top:40px;
+      background:#e5e7ee;
+      text-align:center;
+      padding:30px;
+      color:#666;
+    }
+
   </style>
 </head>
+
 <body>
 
-<header style="text-align:center; padding:30px;">
-  <h1 style="font-size:50px; color:#e58f8f;">🐶 말티즈</h1>
-</header>
+  <header>
 
-<div class="container">
+    <div class="top-banner">
 
-  <div class="main-card">
-    <div class="main-text">
-      <h2>귀엽고 사랑스러운 말티즈</h2>
-      <p>부산 날씨 ☀️ 23°C</p>
-      <p>작고 애교 많은 반려견 말티즈를 소개하는 홈페이지입니다.</p>
-    </div>
+      <div class="banner-text">
 
-    <img src="./dog1.png" alt="메인 말티즈 사진">
-  </div>
+        <h1>이슬미</h1>
 
-  <div class="card-grid">
+        <p>
+          국립부경대학교 사회복지학전공
+        </p>
 
-    <div class="card">
-      <img src="./dog2.png" alt="말티즈 소개 사진">
-      <h3>말티즈 소개</h3>
-      <p>
-        말티즈는 사람을 좋아하고 활발한 성격을 가진 반려견입니다.
-      </p>
-    </div>
+        <div class="weather-box">
+          ☀️ 부산 날씨 · 23°C
+        </div>
 
-    <div class="card">
-      <h3>부산의 이슈</h3>
-      <p>
-        부산은 반려동물 문화 공간과 관광 산업 확대에 힘쓰고 있습니다.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>부경대 뉴스</h3>
-      <p>
-        부경대학교는 지역 사회와 연계한 활동을 확대하고 있습니다.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>사회복지 통계</h3>
-      <p>
-        고령화와 1인 가구 증가로 사회복지 중요성이 커지고 있습니다.
-      </p>
-    </div>
-
-    <div class="card gallery-card">
-      <h3>말티즈 갤러리 🐾</h3>
-
-      <div class="gallery-images">
-        <img src="./dog3.png" alt="말티즈 사진">
-        <img src="./dog4.png" alt="말티즈 사진">
       </div>
+
+      <div class="banner-image">
+        <img src="./dltmfal.png" alt="이슬미 프로필 사진">
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="menu">
+
+    <div class="menu-box">
+
+      <div class="menu-left">
+        <a href="#maltese" class="menu-btn">말티즈 소개</a>
+        <a href="#story" class="menu-btn">사회복지 이야기</a>
+        <a href="#gallery" class="menu-btn">갤러리</a>
+      </div>
+
+      <div class="clock" id="clock">
+        00:00:00
+      </div>
+
     </div>
 
   </div>
 
-</div>
+  <section id="maltese">
 
-<style>
-  * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Pretendard', sans-serif;
-  }
+    <h2 class="section-title">🐶 말티즈 소개</h2>
 
-  body {
-    background: linear-gradient(to bottom, #fff1f1, #fffaf7);
-    padding: 30px;
-  }
+    <div class="card-grid">
 
-  .container {
-    max-width: 1300px;
-    margin:auto;
-  }
+      <div class="card">
+        <img src="./dog1.png">
+        <h3>귀엽고 사랑스러운 말티즈</h3>
+        <p>
+          말티즈는 작고 애교가 많으며 사람을 정말 좋아하는 반려견입니다.
+        </p>
+      </div>
 
-  .main-card {
-    background:white;
-    border-radius:35px;
-    padding:40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:40px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-    margin-bottom:30px;
-    flex-wrap:wrap;
-  }
+      <div class="card">
+        <img src="./dog2.png">
+        <h3>부산과 반려동물 문화</h3>
+        <p>
+          부산은 반려동물 친화 공간과 관광 산업 확대에 힘쓰고 있습니다.
+        </p>
+      </div>
 
-  .main-card img {
-    width:350px;
-    border-radius:30px;
-  }
+      <div class="card">
+        <img src="./dog3.png">
+        <h3>사회복지와 동물</h3>
+        <p>
+          반려동물은 정서적 안정과 심리적 치유에도 긍정적인 영향을 줍니다.
+        </p>
+      </div>
 
-  .main-text h2 {
-    font-size:45px;
-    color:#df8e8e;
-    margin-bottom:15px;
-  }
+    </div>
 
-  .main-text p {
-    color:#666;
-    margin-bottom:10px;
-    font-size:17px;
-  }
+  </section>
 
-  .card-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-    gap:25px;
-  }
+  <section id="story">
 
-  .card {
-    background:white;
-    border-radius:30px;
-    padding:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-    transition:0.3s;
-  }
+    <h2 class="section-title">📚 사회복지 이야기</h2>
 
-  .card:hover {
-    transform:translateY(-8px);
-  }
+    <div class="card-grid">
 
-  .card h3 {
-    color:#df8e8e;
-    margin-bottom:15px;
-  }
+      <div class="card">
+        <h3>고령화 사회</h3>
+        <p>
+          고령화와 1인 가구 증가로 인해 사회복지의 중요성이 커지고 있습니다.
+        </p>
+      </div>
 
-  .card p {
-    color:#666;
-    line-height:1.7;
-  }
+      <div class="card">
+        <h3>지역사회 복지</h3>
+        <p>
+          지역사회 중심의 복지 서비스와 공동체 활동이 활발해지고 있습니다.
+        </p>
+      </div>
 
-  .card img {
-    width:100%;
-    border-radius:20px;
-    margin-bottom:15px;
-  }
+      <div class="card">
+        <h3>반려동물과 정서 지원</h3>
+        <p>
+          반려동물은 외로움 감소와 심리적 안정에 도움을 주는 중요한 존재입니다.
+        </p>
+      </div>
 
-  .gallery-card {
-    grid-column: span 2;
-  }
+    </div>
 
-  .gallery-images {
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
-  }
+  </section>
 
-  .gallery-images img {
-    width:240px;
-  }
+  <section id="gallery">
 
-  @media screen and (max-width:768px) {
-    .gallery-card {
-      grid-column: span 1;
+    <h2 class="section-title">✨ Gallery</h2>
+
+    <div class="gallery">
+      <img src="./dog1.png">
+      <img src="./dog2.png">
+      <img src="./dog3.png">
+      <img src="./dog4.png">
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 이슬미 · Pukyong National University
+  </footer>
+
+  <script>
+
+    function updateClock(){
+
+      const now = new Date();
+
+      const h = String(now.getHours()).padStart(2,'0');
+      const m = String(now.getMinutes()).padStart(2,'0');
+      const s = String(now.getSeconds()).padStart(2,'0');
+
+      document.getElementById('clock').innerText =
+      `${h}:${m}:${s}`;
     }
 
-    .main-card img {
-      width:100%;
-    }
-  }
-</style>
+    setInterval(updateClock,1000);
+
+    updateClock();
+
+  </script>
 
 </body>
 </html>
