@@ -193,203 +193,174 @@
 </head>
 <body>
 
-  <header>
-    <div class="logo">🐶 Maltese</div>
-  </header>
+<header style="text-align:center; padding:30px;">
+  <h1 style="font-size:50px; color:#e58f8f;">🐶 말티즈</h1>
+</header>
 
-  <main class="card-layout">
+<div class="container">
 
-    <div class="main-card large-card">
-      <div class="text-box">
-        <h1>말티즈</h1>
-        <p>
-          귀엽고 사랑스러운 말티즈를 소개하는 홈페이지입니다.
-        </p>
+  <div class="main-card">
+    <div class="main-text">
+      <h2>귀엽고 사랑스러운 말티즈</h2>
+      <p>부산 날씨 ☀️ 23°C</p>
+      <p>작고 애교 많은 반려견 말티즈를 소개하는 홈페이지입니다.</p>
+    </div>
 
-        <p>
-          부산 날씨 ☀️ 23°C
-        </p>
-      </div>
+    <img src="./dog1.png" alt="메인 말티즈 사진">
+  </div>
 
-      <div class="image-box">
-        <img src="./dog1.png" alt="메인 말티즈 이미지">
+  <div class="card-grid">
+
+    <div class="card">
+      <img src="./dog2.png" alt="말티즈 소개 사진">
+      <h3>말티즈 소개</h3>
+      <p>
+        말티즈는 사람을 좋아하고 활발한 성격을 가진 반려견입니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>부산의 이슈</h3>
+      <p>
+        부산은 반려동물 문화 공간과 관광 산업 확대에 힘쓰고 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>부경대 뉴스</h3>
+      <p>
+        부경대학교는 지역 사회와 연계한 활동을 확대하고 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>사회복지 통계</h3>
+      <p>
+        고령화와 1인 가구 증가로 사회복지 중요성이 커지고 있습니다.
+      </p>
+    </div>
+
+    <div class="card gallery-card">
+      <h3>말티즈 갤러리 🐾</h3>
+
+      <div class="gallery-images">
+        <img src="./dog3.png" alt="말티즈 사진">
+        <img src="./dog4.png" alt="말티즈 사진">
       </div>
     </div>
 
-    <div class="card-grid">
+  </div>
 
-      <div class="info-card">
-        <img src="./dog2.png" alt="말티즈 소개 이미지">
+</div>
 
-        <h2>말티즈 소개</h2>
+<style>
+  * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Pretendard', sans-serif;
+  }
 
-        <p>
-          말티즈는 사람을 좋아하고 애교가 많은 반려견입니다.
-          작은 체형 덕분에 실내 생활에도 잘 어울립니다.
-        </p>
-      </div>
+  body {
+    background: linear-gradient(to bottom, #fff1f1, #fffaf7);
+    padding: 30px;
+  }
 
-      <div class="info-card">
-        <h2>부산의 이슈</h2>
+  .container {
+    max-width: 1300px;
+    margin:auto;
+  }
 
-        <p>
-          부산은 반려동물 문화 공간과 관광 산업 확대에 힘쓰고 있습니다.
-        </p>
-      </div>
+  .main-card {
+    background:white;
+    border-radius:35px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+    flex-wrap:wrap;
+  }
 
-      <div class="info-card">
-        <h2>부경대 뉴스</h2>
+  .main-card img {
+    width:350px;
+    border-radius:30px;
+  }
 
-        <p>
-          부경대학교는 지역 사회와 협력한 교육 및 봉사 활동을 확대하고 있습니다.
-        </p>
-      </div>
+  .main-text h2 {
+    font-size:45px;
+    color:#df8e8e;
+    margin-bottom:15px;
+  }
 
-      <div class="info-card">
-        <h2>사회복지 통계</h2>
+  .main-text p {
+    color:#666;
+    margin-bottom:10px;
+    font-size:17px;
+  }
 
-        <p>
-          고령화와 1인 가구 증가로 사회복지 서비스 중요성이 커지고 있습니다.
-        </p>
-      </div>
+  .card-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:25px;
+  }
 
-      <div class="gallery-card">
-        <h2>말티즈 갤러리 🐾</h2>
+  .card {
+    background:white;
+    border-radius:30px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+  }
 
-        <div class="gallery-images">
-          <img src="./dog3.png" alt="말티즈 사진">
-          <img src="./dog4.png" alt="말티즈 사진">
-        </div>
-      </div>
+  .card:hover {
+    transform:translateY(-8px);
+  }
 
-    </div>
+  .card h3 {
+    color:#df8e8e;
+    margin-bottom:15px;
+  }
 
-  </main>
+  .card p {
+    color:#666;
+    line-height:1.7;
+  }
 
-  <style>
-    body {
-      background: linear-gradient(to bottom, #fff3f3, #fffaf7);
-      min-height: 100vh;
-      padding: 40px;
-    }
+  .card img {
+    width:100%;
+    border-radius:20px;
+    margin-bottom:15px;
+  }
 
-    header {
-      text-align: center;
-      margin-bottom: 35px;
-    }
+  .gallery-card {
+    grid-column: span 2;
+  }
 
-    .logo {
-      font-size: 42px;
-      font-weight: bold;
-      color: #e28f8f;
-    }
+  .gallery-images {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+  }
 
-    .card-layout {
-      max-width: 1300px;
-      margin: auto;
-    }
+  .gallery-images img {
+    width:240px;
+  }
 
-    .large-card {
-      background: white;
-      border-radius: 35px;
-      padding: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      margin-bottom: 35px;
-      flex-wrap: wrap;
-    }
-
-    .large-card img {
-      width: 340px;
-      border-radius: 28px;
-      border: 8px solid #fff2f2;
-    }
-
-    .text-box h1 {
-      font-size: 65px;
-      color: #d88787;
-      margin-bottom: 18px;
-    }
-
-    .text-box p {
-      color: #666;
-      margin-bottom: 12px;
-      font-size: 17px;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
-    }
-
-    .info-card,
+  @media screen and (max-width:768px) {
     .gallery-card {
-      background: rgba(255,255,255,0.95);
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-      transition: 0.3s;
+      grid-column: span 1;
     }
 
-    .info-card:hover,
-    .gallery-card:hover {
-      transform: translateY(-8px);
+    .main-card img {
+      width:100%;
     }
-
-    .info-card h2,
-    .gallery-card h2 {
-      color: #d88787;
-      margin-bottom: 18px;
-    }
-
-    .info-card p,
-    .gallery-card p {
-      color: #666;
-      line-height: 1.7;
-    }
-
-    .info-card img {
-      width: 100%;
-      border-radius: 22px;
-      margin-bottom: 18px;
-    }
-
-    .gallery-images {
-      display: flex;
-      gap: 18px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .gallery-images img {
-      width: 220px;
-      border-radius: 24px;
-      border: 6px solid #fff2f2;
-    }
-
-    @media screen and (max-width: 768px) {
-      body {
-        padding: 20px;
-      }
-
-      .text-box h1 {
-        font-size: 48px;
-      }
-
-      .large-card {
-        padding: 28px;
-      }
-
-      .large-card img {
-        width: 100%;
-      }
-    }
-  </style>
+  }
+</style>
 
 </body>
 </html>
