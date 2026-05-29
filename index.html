@@ -82,32 +82,34 @@ header{
 
 .profile-box{
   position:absolute;
-  right:-10px;
-  bottom:-10px;
+  right:-15px;
+  bottom:-15px;
   background:white;
   padding:12px;
-  border-radius:18px;
+  border-radius:20px;
   text-align:center;
   box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .profile-box img{
-  width:110px;
-  height:110px;
-  border-radius:16px;
+  width:140px;
+  height:140px;
+  border-radius:18px;
   object-fit:cover;
 }
 
 .profile-box h3{
-  font-size:14px;
+  font-size:15px;
   color:#d39a1e;
-  margin-top:7px;
+  margin-top:8px;
 }
 
 .profile-box p{
-  font-size:11px;
+  font-size:12px;
   color:#777;
 }
+
+/* 메뉴 */
 
 .menu{
   padding:0 5%;
@@ -151,15 +153,19 @@ header{
   font-weight:700;
 }
 
+/* 섹션 */
+
 section{
-  padding:45px 5%;
+  padding:50px 5%;
 }
 
 .section-title{
-  font-size:38px;
+  font-size:40px;
   color:#c88b17;
-  margin-bottom:28px;
+  margin-bottom:30px;
 }
+
+/* 카드 */
 
 .card-grid{
   display:grid;
@@ -170,7 +176,7 @@ section{
 .card{
   background:white;
   padding:25px;
-  border-radius:28px;
+  border-radius:30px;
   box-shadow:0 8px 20px rgba(0,0,0,0.06);
   transition:0.3s;
 }
@@ -181,13 +187,13 @@ section{
 
 .card img{
   width:100%;
-  border-radius:20px;
+  border-radius:22px;
   margin-bottom:18px;
 }
 
 .card h3{
   color:#d39a1e;
-  margin-bottom:14px;
+  margin-bottom:15px;
 }
 
 .card p{
@@ -199,29 +205,31 @@ section{
 
 .stat-container{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   gap:25px;
 }
 
 .stat-card{
   background:white;
-  padding:25px;
-  border-radius:28px;
+  padding:28px;
+  border-radius:30px;
   box-shadow:0 8px 20px rgba(0,0,0,0.06);
 }
 
 .stat-card h3{
   color:#d39a1e;
-  margin-bottom:18px;
+  margin-bottom:20px;
 }
+
+/* 막대 */
 
 .bar-wrap{
   width:100%;
-  height:28px;
+  height:30px;
   background:#fff3c4;
   border-radius:30px;
   overflow:hidden;
-  margin-bottom:18px;
+  margin-bottom:20px;
 }
 
 .bar{
@@ -229,11 +237,57 @@ section{
   background:linear-gradient(to right,#ffd86c,#ffb347);
   border-radius:30px;
   color:white;
-  font-size:14px;
   font-weight:bold;
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+/* 세로 그래프 */
+
+.graph-box{
+  display:flex;
+  justify-content:space-around;
+  align-items:flex-end;
+  height:180px;
+  margin-bottom:20px;
+}
+
+.graph-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.mini-bar{
+  width:55px;
+  background:linear-gradient(to top,#ffc85c,#ffe48f);
+  border-radius:20px 20px 0 0;
+}
+
+/* 원형 그래프 */
+
+.circle-wrap{
+  display:flex;
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.circle{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  background:conic-gradient(
+    #ffd15c 0% 90%,
+    #fff1c2 90% 100%
+  );
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  font-weight:bold;
+  color:#9b6a00;
 }
 
 /* 갤러리 */
@@ -250,6 +304,16 @@ section{
   box-shadow:0 8px 18px rgba(0,0,0,0.08);
 }
 
+/* 출처 */
+
+.source{
+  margin-top:25px;
+  color:#888;
+  font-size:14px;
+}
+
+/* 푸터 */
+
 footer{
   margin-top:40px;
   background:#fff0bd;
@@ -257,6 +321,8 @@ footer{
   padding:30px;
   color:#85642d;
 }
+
+/* 반응형 */
 
 @media screen and (max-width:900px){
 
@@ -343,6 +409,8 @@ footer{
 
 </div>
 
+<!-- 말티즈 소개 -->
+
 <section id="intro">
 
   <h2 class="section-title">🐾 말티즈 소개</h2>
@@ -351,9 +419,7 @@ footer{
 
     <div class="card">
       <img src="./dog2.png">
-
       <h3>사람을 좋아하는 강아지</h3>
-
       <p>
         말티즈는 활발하고 애교가 많은 성격으로 많은 사람들에게 사랑받는 반려견입니다.
       </p>
@@ -361,9 +427,7 @@ footer{
 
     <div class="card">
       <img src="./dog3.png">
-
       <h3>하얀 털의 매력</h3>
-
       <p>
         말티즈의 새하얀 털과 동그란 눈은 귀엽고 포근한 분위기를 만들어줍니다.
       </p>
@@ -371,9 +435,7 @@ footer{
 
     <div class="card">
       <img src="./dog4.png">
-
       <h3>정서적 안정감</h3>
-
       <p>
         반려견과 함께하는 생활은 스트레스 감소와 정서적 안정에도 긍정적인 영향을 줍니다.
       </p>
@@ -382,6 +444,8 @@ footer{
   </div>
 
 </section>
+
+<!-- 부산 이슈 -->
 
 <section id="busan">
 
@@ -407,6 +471,8 @@ footer{
 
 </section>
 
+<!-- 부경대 뉴스 -->
+
 <section id="news">
 
   <h2 class="section-title">🎓 부경대 관련 뉴스</h2>
@@ -430,6 +496,8 @@ footer{
   </div>
 
 </section>
+
+<!-- 사회복지 통계 -->
 
 <section id="welfare">
 
@@ -455,36 +523,53 @@ footer{
 
 </section>
 
+<!-- 동물등록 통계 -->
+
 <section id="animal">
 
-  <h2 class="section-title">📈 동물등록 현황 통계</h2>
+  <h2 class="section-title">
+    📈 동물등록 현황 통계
+  </h2>
 
   <div class="stat-container">
 
     <div class="stat-card">
 
-      <h3>2023 동물등록 수</h3>
+      <h3>🐶 2023 동물등록 수</h3>
 
       <div class="bar-wrap">
-        <div class="bar" style="width:85%;">
-          328만+
+        <div class="bar" style="width:88%;">
+          328만 마리+
         </div>
       </div>
 
       <p>
-        국내 반려동물 등록 수는 꾸준히 증가하고 있습니다.
+        국내 반려동물 등록 수는 매년 꾸준히 증가하고 있습니다.
       </p>
 
     </div>
 
     <div class="stat-card">
 
-      <h3>반려견 양육 증가</h3>
+      <h3>📊 반려견 양육 증가율</h3>
 
-      <div class="bar-wrap">
-        <div class="bar" style="width:72%;">
-          증가 추세
+      <div class="graph-box">
+
+        <div class="graph-item">
+          <span>2021</span>
+          <div class="mini-bar" style="height:60%;"></div>
         </div>
+
+        <div class="graph-item">
+          <span>2022</span>
+          <div class="mini-bar" style="height:75%;"></div>
+        </div>
+
+        <div class="graph-item">
+          <span>2023</span>
+          <div class="mini-bar" style="height:95%;"></div>
+        </div>
+
       </div>
 
       <p>
@@ -495,37 +580,45 @@ footer{
 
     <div class="stat-card">
 
-      <h3>동물복지 관심도</h3>
+      <h3>💛 동물복지 관심도</h3>
 
-      <div class="bar-wrap">
-        <div class="bar" style="width:90%;">
-          매우 높음
+      <div class="circle-wrap">
+
+        <div class="circle">
+          90%
         </div>
+
       </div>
 
       <p>
-        반려동물 복지와 보호 문화에 대한 관심이 확대되고 있습니다.
+        반려동물 보호와 복지 문화에 대한 관심이 높아지고 있습니다.
       </p>
 
     </div>
 
   </div>
 
-  <p style="margin-top:20px; color:#888; font-size:14px;">
+  <p class="source">
     출처 : 동물보호관리시스템 동물등록 현황 통계
   </p>
 
 </section>
 
+<!-- 갤러리 -->
+
 <section id="gallery">
 
-  <h2 class="section-title">✨ 말티즈 갤러리</h2>
+  <h2 class="section-title">
+    ✨ 말티즈 갤러리
+  </h2>
 
   <div class="gallery">
+
     <img src="./dog1.png">
     <img src="./dog2.png">
     <img src="./dog3.png">
     <img src="./dog4.png">
+
   </div>
 
 </section>
