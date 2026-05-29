@@ -194,239 +194,202 @@
 <body>
 
   <header>
-    <div class="logo">Maltese</div>
-
-    <nav>
-      <a href="#" onclick="openWindow('homeWindow')">메인</a>
-      <a href="#" onclick="openWindow('aboutWindow')">소개</a>
-      <a href="#" onclick="openWindow('issueWindow')">부산 이슈</a>
-      <a href="#" onclick="openWindow('newsWindow')">부경대 뉴스</a>
-      <a href="#" onclick="openWindow('statsWindow')">통계</a>
-      <a href="#" onclick="openWindow('galleryWindow')">갤러리</a>
-    </nav>
+    <div class="logo">🐶 Maltese</div>
   </header>
 
-  <div style="height:100vh; display:flex; justify-content:center; align-items:center; padding-top:80px;">
+  <main class="card-layout">
 
-    <div class="window" id="homeWindow" style="display:block;">
-      <div class="window-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <p>말티즈 메인</p>
+    <div class="main-card large-card">
+      <div class="text-box">
+        <h1>말티즈</h1>
+        <p>
+          귀엽고 사랑스러운 말티즈를 소개하는 홈페이지입니다.
+        </p>
+
+        <p>
+          부산 날씨 ☀️ 23°C
+        </p>
       </div>
 
-      <div class="window-content">
-        <div class="text-box">
-          <h1>말티즈</h1>
-          <p>
-            귀엽고 사랑스러운 반려견 말티즈를 소개하는 홈페이지입니다.
-          </p>
-
-          <p>
-            부산 날씨 ☀️ 23°C
-          </p>
-        </div>
-
-        <div class="image-box">
-          <img src="./dog1.png" alt="메인 말티즈 이미지">
-        </div>
+      <div class="image-box">
+        <img src="./dog1.png" alt="메인 말티즈 이미지">
       </div>
     </div>
 
-    <div class="window" id="aboutWindow">
-      <div class="window-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <p>말티즈 소개</p>
+    <div class="card-grid">
+
+      <div class="info-card">
+        <img src="./dog2.png" alt="말티즈 소개 이미지">
+
+        <h2>말티즈 소개</h2>
+
+        <p>
+          말티즈는 사람을 좋아하고 애교가 많은 반려견입니다.
+          작은 체형 덕분에 실내 생활에도 잘 어울립니다.
+        </p>
       </div>
 
-      <div class="window-content">
-        <div class="image-box">
-          <img src="./dog2.png" alt="소개 말티즈 이미지">
-        </div>
+      <div class="info-card">
+        <h2>부산의 이슈</h2>
 
-        <div class="text-box">
-          <h2 class="section-title">말티즈 특징</h2>
+        <p>
+          부산은 반려동물 문화 공간과 관광 산업 확대에 힘쓰고 있습니다.
+        </p>
+      </div>
 
-          <p>
-            말티즈는 사람을 좋아하고 애교가 많은 강아지입니다.
-            작은 체형 덕분에 실내 생활에도 잘 어울립니다.
-          </p>
+      <div class="info-card">
+        <h2>부경대 뉴스</h2>
 
-          <p>
-            하얀 털과 동그란 눈이 특징이며 초보 반려인에게도 인기가 높습니다.
-          </p>
+        <p>
+          부경대학교는 지역 사회와 협력한 교육 및 봉사 활동을 확대하고 있습니다.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h2>사회복지 통계</h2>
+
+        <p>
+          고령화와 1인 가구 증가로 사회복지 서비스 중요성이 커지고 있습니다.
+        </p>
+      </div>
+
+      <div class="gallery-card">
+        <h2>말티즈 갤러리 🐾</h2>
+
+        <div class="gallery-images">
+          <img src="./dog3.png" alt="말티즈 사진">
+          <img src="./dog4.png" alt="말티즈 사진">
         </div>
       </div>
+
     </div>
 
-    <div class="window" id="issueWindow">
-      <div class="window-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <p>부산 이슈</p>
-      </div>
-
-      <div class="window-content column">
-        <div class="card">
-          <h3>부산 반려동물 문화 확대</h3>
-          <p>
-            부산은 반려동물 공원과 문화 공간을 확대하며 반려인들의 관심을 받고 있습니다.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>관광 활성화 사업</h3>
-          <p>
-            부산은 다양한 관광 사업과 축제를 통해 지역 경제 활성화를 추진하고 있습니다.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="window" id="newsWindow">
-      <div class="window-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <p>부경대 뉴스</p>
-      </div>
-
-      <div class="window-content column">
-        <div class="card">
-          <h3>부경대학교 지역 협력 활동</h3>
-          <p>
-            부경대학교는 지역 사회와 함께 다양한 교육 활동과 봉사 프로그램을 운영하고 있습니다.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>학생 지원 확대</h3>
-          <p>
-            취업 지원과 진로 상담 프로그램 확대에 대한 관심이 높아지고 있습니다.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="window" id="statsWindow">
-      <div class="window-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <p>사회복지 통계</p>
-      </div>
-
-      <div class="window-content column">
-        <div class="card">
-          <h3>고령화 사회</h3>
-          <p>
-            노인 인구 증가로 돌봄과 복지 정책의 중요성이 커지고 있습니다.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>1인 가구 증가</h3>
-          <p>
-            1인 가구 증가에 따라 다양한 사회복지 서비스 수요도 함께 늘어나고 있습니다.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="window" id="galleryWindow">
-      <div class="window-top">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <p>말티즈 갤러리</p>
-      </div>
-
-      <div class="window-content gallery-box">
-        <img src="./dog3.png" alt="말티즈 사진">
-        <img src="./dog4.png" alt="말티즈 사진">
-      </div>
-    </div>
-
-  </div>
+  </main>
 
   <style>
-    .window {
-      width: 85%;
-      max-width: 1100px;
-      background: rgba(255,255,255,0.95);
-      border-radius: 30px;
-      overflow: hidden;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.15);
-      display: none;
-      animation: fade 0.3s;
+    body {
+      background: linear-gradient(to bottom, #fff3f3, #fffaf7);
+      min-height: 100vh;
+      padding: 40px;
     }
 
-    .window-top {
-      background: #ffe0e0;
-      padding: 15px 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    header {
+      text-align: center;
+      margin-bottom: 35px;
     }
 
-    .window-top p {
-      margin-left: 10px;
-      color: #7a5a5a;
+    .logo {
+      font-size: 42px;
       font-weight: bold;
+      color: #e28f8f;
     }
 
-    .dot {
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      display: inline-block;
+    .card-layout {
+      max-width: 1300px;
+      margin: auto;
     }
 
-    .red { background:#ff7b7b; }
-    .yellow { background:#ffd56b; }
-    .green { background:#7bdb7b; }
-
-    .window-content {
-      padding: 50px;
+    .large-card {
+      background: white;
+      border-radius: 35px;
+      padding: 45px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 50px;
+      justify-content: space-between;
+      gap: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 35px;
       flex-wrap: wrap;
     }
 
-    .column {
-      flex-direction: column;
+    .large-card img {
+      width: 340px;
+      border-radius: 28px;
+      border: 8px solid #fff2f2;
     }
 
-    .gallery-box img {
-      width: 320px;
-      border-radius: 25px;
-      border: 8px solid white;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    .text-box h1 {
+      font-size: 65px;
+      color: #d88787;
+      margin-bottom: 18px;
     }
 
-    @keyframes fade {
-      from { opacity:0; transform:scale(0.95); }
-      to { opacity:1; transform:scale(1); }
+    .text-box p {
+      color: #666;
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .info-card,
+    .gallery-card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .info-card:hover,
+    .gallery-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .info-card h2,
+    .gallery-card h2 {
+      color: #d88787;
+      margin-bottom: 18px;
+    }
+
+    .info-card p,
+    .gallery-card p {
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 22px;
+      margin-bottom: 18px;
+    }
+
+    .gallery-images {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .gallery-images img {
+      width: 220px;
+      border-radius: 24px;
+      border: 6px solid #fff2f2;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      .text-box h1 {
+        font-size: 48px;
+      }
+
+      .large-card {
+        padding: 28px;
+      }
+
+      .large-card img {
+        width: 100%;
+      }
     }
   </style>
-
-  <script>
-    function openWindow(id) {
-      const windows = document.querySelectorAll('.window');
-
-      windows.forEach(win => {
-        win.style.display = 'none';
-      });
-
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
 
 </body>
 </html>
